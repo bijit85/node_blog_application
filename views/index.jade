@@ -3,9 +3,10 @@ extends layout
 block content
   if posts
     each post, i in posts
-      h2= post.title
-      p.meta Posted in #{post.category} by #{post.author} on #{post.date}
-      post.body
-      a.more(href='/posts/show/#{post._id}') Read More
+      .post
+        h2= post.title
+        p.meta Posted in #{post.category} by #{post.author} on #{post.date}
+        =post.body
+        a.more(href='/posts/show/#{post._id}') Read More
     else
       p.noposts There are no posts to display

@@ -79,3 +79,23 @@ footer {
   border-radius: 3px;
   /*overflow: auto;*/
 }
+
+.meta {
+  padding: 7px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  background: #ccc;
+}
+
+a.more {
+  display: block;
+  background: none;
+  color: #83cd29;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.post {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+}

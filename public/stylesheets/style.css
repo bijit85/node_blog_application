@@ -47,8 +47,8 @@ nav {
   background: #404137;
   color: #fff;
   overflow: auto;
-  height: 30px;
-  padding: 10px 0 0 10px;
+  height: 25px;
+  padding: 8px 0 0 10px;
   font-size: 15px;
   border-radius: 3px;
 }
@@ -90,9 +90,21 @@ footer {
 a.more {
   display: block;
   background: none;
+  width: 80px;
   color: #83cd29;
-  padding: 0;
+  padding: 10px 10px 10px 10px;
   margin-top: 10px;
+  text-align: center;
+  border-radius: 3px;
+}
+
+a.more:hover {
+  background: #83cd29;
+  color: #404137;
+}
+
+a.title:hover {
+  color: #83cd29;
 }
 
 .post {

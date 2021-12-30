@@ -4,8 +4,10 @@ block content
   if posts
     each post, i in posts
       .post
-        h2= post.title
-        p.meta Posted in #{post.category} by #{post.author} on #{post.date}
+        h2
+          a.title(href='/posts/show/#{post._id}')
+            =post.title
+        p.meta Posted in #{post.category} by #{post.author} on #{moment(post.date).format("LLLL")}
         =post.body
         a.more(href='/posts/show/#{post._id}') Read More
     else

@@ -46,7 +46,7 @@ a {
 nav {
   background: #404137;
   color: #fff;
-  overflow: auto;
+  /*overflow: auto;*/
   height: 25px;
   padding: 8px 0 0 10px;
   font-size: 15px;
@@ -62,11 +62,14 @@ nav a {
   padding: 10px;
   margin: 0 10px;
   color: #fff;
+  border-radius: 5px;
 }
 
 nav a.current, nav a:hover {
   background: #83cd29;
   color: #000;
+  transition-duration: 100ms;
+  transition-delay: 20ms;
 }
 
 footer {
@@ -101,13 +104,63 @@ a.more {
 a.more:hover {
   background: #83cd29;
   color: #404137;
+  transition-duration: 100ms;
+  transition-delay: 20ms;
 }
 
 a.title:hover {
   color: #83cd29;
+  transition-duration: 100ms;
+  transition-delay: 20ms;
 }
 
 .post {
   border-bottom: 1px solid #ccc;
   padding-bottom: 20px;
 }
+
+input, select, textarea {
+  margin-bottom: 15px;
+}
+
+label {
+  display: inline-block;
+  width: 180px;
+  padding-top: 5px;
+}
+
+input[type='text'], select, textarea {
+  padding: 3px;
+  height: 20px;
+  width: 200px;
+  border: 1px #ccc solid;
+  border-radius: 3px;
+}
+
+input[type='text']:focus, select:focus, textarea:focus {
+  background-color: #f3ffd6;
+}
+
+input[type='submit'] {
+  width: 80px;
+  padding: 5px;
+  border: none;
+  border-radius: 3px;
+  background-color: #83cd29;
+}
+
+input[type='submit']:hover {
+  background-color: #404137;
+  color: #83cd29;
+  font-weight: bold;
+}
+
+select {
+  height: 28px;
+}
+
+textarea {
+  height: 70px;
+  width: 120px;
+}
+
